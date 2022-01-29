@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: #555;
+}
+
+.header {
+  background-color: #62E3E3;
+  height: 75px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 3em;
+  color: #555;
+}
+
+.header h1{
+  color: #fff;
+}
+
+.header div{
+  height: fit-content;
+}
+
+.logOut {
+  color: #fff;
+  background-color: #fca7a7;
+  padding: 0.5em 1em;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+.logOut:hover{
+  background-color: #FFBCBC;
+  cursor: pointer;
+}
+
+.heroContainer{
+  padding: 2em;
+}
+
+.form{
+  background-color: #fff;
+  border: 2px solid #62E3E3;
+  border-radius: 5px;
+  min-width: fit-content;
+  width: 600px;
+  height: 250px;
+  padding: 1.5em;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2em;
+}
+
+.form > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.formTitle{
+  display: block;
+  font-size: 18px;
+}
+
+.input{
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #555;
+}
+
+textarea{
+  resize: none;
+  padding: 0.5em;
+}
+input[type="text"], select{
+  height: 2em;
+  padding-left: 0.5em;
+}
+
+
+
+option:hover{
+  background-color: #70E76E;
+  color: #fff;
+}
+
+.button {
+  width: 100%;
+  text-align: center;
+  font-weight: 700;
+  color: #fff;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  border: none;
+  background-color: #62E3E3;
+  border: transparent 2px solid;
+}
+.button:hover{
+  background-color: #ffffff;
+  border: 2px solid;
+  cursor: pointer;
+  color: #62E3E3;
+}
+
+hr {
+  margin: 2.5em auto;
+  border: 1px solid #555;
+  border-radius: 2px;
+}
+
+
+.taskList {
+  margin-top: 2em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 1em;
+}
+
+.lowCard{
+  border: 2px solid #70E76E;
+  width: 20em;
+  padding: 1em;
+  border-radius: 5px;
+  height: fit-content;
+  min-height: 11em;
+  max-height: 15em;
+}
+.lowCard hr {
+  background-color: #70E76E;
+  border: 1px solid #70E76E;
+}
+
+.mediumCard{
+  border: 2px solid #d3b950;
+  width: 20em;
+  padding: 1em;
+  border-radius: 5px;
+  height: fit-content;
+  min-height: 11em;
+  max-height: 15em;
+}
+.mediumCard hr {
+  background-color: #d3b950;
+  border: 1px solid #d3b950;
+}
+
+.highCard{
+  border: 2px solid #E76E6E;
+  width: 20em;
+  padding: 1em;
+  border-radius: 5px;
+  height: fit-content;
+  min-height: 11em;
+  max-height: 15em;
+}
+.highCard hr {
+  background-color: #E76E6E;
+  border: 1px solid #E76E6E;
+}
+
+.cardHr {
+  margin: 1em 0;
+  width: 100%;
+}
+
+.description{
+  margin-bottom: 1em;
+  height: 5em;
+  overflow: scroll;
+}
+.description::-webkit-scrollbar{
+  display: none;
+}
+
+.buttons{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.delete {
+  background-color: #E76E6E;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  border: 1px solid #555;
+  color: #fff;
+}
+.delete:hover{
+  cursor: pointer;
+}
+
+.edit {
+  background-color: #fff;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  border: 1px solid #555;
+}
+.edit:hover{
+  cursor: pointer;
+}
+
+@media (max-width: 500px){
+  .header{
+    padding: 0 1em;
+  }
+
+  h1{
+    font-size: 28px;
+  }
+
+  .logOut{
+    transform: scale(0.8);
+  }
+
+  .form{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    padding: 0.5em 1em;
+  }
+  
+  select{
+    background-color: #fff;
+  }
+
+  .taskSectionTitle{
+    text-align: center;
+  }
+
+  .form > div {
+    margin: 0.5em auto;
+    gap: 1em
+  }
+
+  .buttonDiv{
+    display: flex;
+    justify-content: center;
+  }
+
+  .button{
+    width: 60%;
+    padding: 1em;
+  }
+
+  .taskTitle{
+    text-align: center;
+  }
+}
