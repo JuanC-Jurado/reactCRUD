@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/JuanC-Jurado/reactCRUD.git/static/css/main.1902bbc0.css",
+    "main.js": "/JuanC-Jurado/reactCRUD.git/static/js/main.ea563a39.js",
+    "index.html": "/JuanC-Jurado/reactCRUD.git/index.html",
+    "main.1902bbc0.css.map": "/JuanC-Jurado/reactCRUD.git/static/css/main.1902bbc0.css.map",
+    "main.ea563a39.js.map": "/JuanC-Jurado/reactCRUD.git/static/js/main.ea563a39.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1902bbc0.css",
+    "static/js/main.ea563a39.js"
+  ]
+}
